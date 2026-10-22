@@ -86,7 +86,7 @@ export default function App() {
     setBusy(true)
     try {
       if (authMode === 'signup') {
-        const { error } = await supabase.auth.signUp({ email: authEmail, password: authPassword, options: { data: { username: authUsername } } })
+        const { error } = await supabase.auth.signUp({ email: authEmail, password: authPassword, options: { data: { username: authUsername }, emailRedirectTo: `${window.location.origin}/` } })
         if (error) throw error
         setNotice('Compte créé ! Vérifie tes e-mails si la confirmation est activée.')
       } else {
