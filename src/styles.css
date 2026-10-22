@@ -5,3 +5,32 @@
 @media(max-width:900px){.sidebar{width:230px}.main-area{margin-left:230px}.global-search{width:200px}.topbar{padding:0 20px}.content{padding:25px 20px}.hero-art{opacity:.65;right:-15%;width:58%}.hero-copy{max-width:340px}.settings-layout{grid-template-columns:1fr}.footer{padding:18px 20px}}
 @media(max-width:700px){.sidebar{transform:translateX(-100%);transition:transform .25s ease;width:270px;box-shadow:none}.sidebar.sidebar-open{transform:translateX(0);box-shadow:15px 0 50px #3e27351c}.scrim{display:block;position:fixed;z-index:15;inset:0;background:#37253155;border:0}.main-area{margin-left:0}.topbar{height:65px;padding:0 15px;gap:10px}.mobile-menu{display:grid}.breadcrumb{font-size:10px;flex:1;min-width:0}.top-actions{gap:7px}.global-search{width:38px;height:36px;padding:0;justify-content:center;border:0;background:transparent}.global-search input,.global-search kbd{display:none}.topbar .icon-button:not(.mobile-menu){display:none}.top-avatar{width:32px;height:32px}.content{padding:22px 15px 28px}.demo-banner{align-items:flex-start;font-size:9px;line-height:1.6}.demo-banner button{font-size:0}.welcome-row,.page-intro{align-items:flex-start;flex-direction:column;gap:15px}.welcome-row h1,.page-intro h1{font-size:29px}.welcome-row>.primary-button,.page-intro>.primary-button{align-self:flex-start}.hero-panel{min-height:370px;padding:27px 23px;align-items:flex-start}.hero-copy{max-width:100%}.hero-copy h2{font-size:31px}.hero-copy p{max-width:280px}.hero-art{width:100%;height:185px;right:0;top:auto;bottom:0;opacity:.9}.orbit-one{width:270px;height:140px;right:0;top:20px}.orbit-two{width:320px;height:170px;right:-10px;top:2px}.hero-card{width:124px;height:148px;padding:11px;border-radius:12px}.hero-card-back{right:17%;top:15px}.hero-card-back span{font-size:34px}.hero-card-front{right:37%;top:22px}.hero-avatar{width:44px;height:44px;border-radius:14px;font-size:25px;margin-bottom:9px}.hero-card-name{font-size:10px}.hero-card-sub{font-size:5px}.hero-card-tags{gap:3px}.hero-card-tags i{font-size:6px;padding:4px}.floating-badge{padding:7px 8px;font-size:8px}.badge-one{right:4%;top:17px}.badge-two{right:5%;bottom:16px}.section-block{margin-bottom:31px}.section-heading h2{font-size:18px}.game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.game-card{min-height:200px;padding:13px 12px 11px}.game-card h3{font-size:12px}.game-card p{font-size:9px}.game-card-bottom{font-size:8px}.player-grid{grid-template-columns:1fr;gap:12px}.player-card-cover{height:90px}.filter-bar{gap:8px}.filter-search{flex-basis:100%;padding:4px 1px}.filter-divider{display:none}.filter-icon{display:none}.filter-bar select{flex:1;min-width:0;max-width:none}.reset-button{padding:7px 0}.game-tabs button{font-size:9px;padding:8px 10px}.footer{padding:16px 15px;font-size:8px;gap:12px}.footer span:last-child{text-align:right}.form-row{grid-template-columns:1fr}.modal{padding:19px;max-height:92vh}.profile-summary{align-items:flex-start;padding:16px}.profile-avatar{width:54px;height:54px;font-size:16px}.owned-card{flex-wrap:wrap}.owned-info{min-width:calc(100% - 60px)}.owned-actions{margin-left:56px}.settings-panel{padding:16px}.feature-empty{min-height:60vh}.toast{bottom:14px;right:14px;left:14px;max-width:none}}
 @media(min-width:701px) and (max-width:1050px){.player-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-art{opacity:.45}.hero-copy{max-width:340px}}
+
+/* Girlies.gg polish: richer surfaces, clearer depth and accessible motion. */
+:root{--shadow:0 18px 48px rgba(91,48,73,.09)}
+body{background:radial-gradient(ellipse at 88% 0%,rgba(246,222,235,.32),transparent 34%),#fffafd}
+.content{animation:content-in .38s ease both}
+@keyframes content-in{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.hero-panel{background:linear-gradient(118deg,#f8eaf1 0%,#f4e9f7 55%,#e9e4f8 100%);border:1px solid #f0e0ea;box-shadow:inset 0 1px rgba(255,255,255,.75)}
+.hero-panel:after{content:"✦";position:absolute;right:48%;top:25px;color:#fff;font-size:19px;text-shadow:0 0 18px #c98aaa;opacity:.85}
+.hero-card-front{box-shadow:0 22px 55px rgba(101,66,91,.16)}
+.game-card{box-shadow:0 3px 12px rgba(84,48,68,.025)}
+.game-card:focus-visible,.player-card:focus-within{outline:3px solid #e9b5cd;outline-offset:3px}
+.player-card{transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.player-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(84,48,68,.09);border-color:#e4c4d4}
+.primary-button:active,.secondary-button:active,.light-button:active{transform:translateY(1px)}
+.player-detail{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.player-detail-banner{min-height:125px;padding:15px 17px;background:linear-gradient(125deg,#f8e7ef,#eee7fb);position:relative;display:flex;align-items:flex-start;justify-content:space-between}
+.player-detail .player-game-label{background:#ffffffc9;color:#8f617a}
+.player-detail-avatar{position:absolute;left:20px;bottom:-28px;width:68px;height:68px;border:5px solid #fff;border-radius:22px;background:linear-gradient(135deg,#f5d9e6,#e5dafa);display:grid;place-items:center;color:#9c5c7d;font:800 23px Manrope;box-shadow:0 6px 18px #714c6017}
+.player-detail-status{display:flex;align-items:center;gap:6px;border:1px solid #ffffffa8;background:#ffffffc9;padding:7px 9px;border-radius:20px;font-size:9px;color:#6e8877}
+.player-detail-content{padding:39px 19px 19px}
+.player-detail-content>.player-handle{display:block;margin-bottom:10px}
+.player-detail-bio{font-size:12px;line-height:1.7;color:#796875;margin:0 0 17px}
+.player-detail-meta{display:grid;gap:0;margin:16px 0;border:1px solid #f0e6ec;border-radius:10px;overflow:hidden}
+.player-detail-meta div{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 12px;border-bottom:1px solid #f4edf1}
+.player-detail-meta div:last-child{border-bottom:0}
+.player-detail-meta span{font-size:10px;color:#a0919b}
+.player-detail-meta strong{font-size:10px;color:#624b5b;text-align:right}
+.player-detail-cta{margin-top:17px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
